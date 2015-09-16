@@ -1,0 +1,30 @@
+/* <% provide(:title, "Home") %> */
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+      <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+<div class="center jumbotron">
+  <h1>Welcome to Apostell.</h1>
+    <p>We make it easier for you to <a href="http://www.apostell.com/">ship</a> your items worldwide.</p>
+    
+  <%= link_to "Start sending now!", 'http://localhost:3000/users/new', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("logo1", alt: "Apostell logo"), 'http://apostell.com/' %>
+
+<% end %>
