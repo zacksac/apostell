@@ -22,9 +22,9 @@
   <h1>Welcome to Apostell.</h1>
     <p>We make it easier for you to <a href="#">ship</a> your items worldwide.</p>
     
-  <%= link_to "Start sending now!", 'http://localhost:3000/users/new', class: "btn btn-lg btn-primary" %>
+  <%= link_to "Start sending now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
-<%= link_to image_tag("logo1", alt: "Apostell logo"), 'http://apostell.com/' %>
+<%= link_to image_tag("logo1", alt: "Apostell logo"), root_path %>
 
 <% end %>
