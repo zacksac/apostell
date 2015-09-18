@@ -1,5 +1,17 @@
 Hi <%= @user.name %>,
 
-Welcome to Apostell! Click on the link below to activate your account:
+Welcome to Apostell! 
+
+Post about the book you're trying to send to your brother in Paris, your next flight to New York, or the shirt you're meant to receive from your mother in Cape Town.
+
+Friends you follow might be traveling towards your destination, just as you might be traveling towards your follower friends.
+
+Click on the link below to activate your account:
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+Thank you for choosing Apostell.
+
+Yours faithfully,
+
+Your Apostell team
