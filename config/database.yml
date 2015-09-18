@@ -15,6 +15,7 @@ test:
 
 production:
   adapter: postgresql
+  encoding: unicode
   database: apostell_database_production
   pool: 5
   timeout: 5000
