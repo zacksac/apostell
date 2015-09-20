@@ -8,7 +8,7 @@
       <%= render 'shared/error_messages', object: f.object %>
 
       <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.text_field :name, "First Name & Last Name", class: 'form-control' %>
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
@@ -23,8 +23,9 @@
     <% end %>
 
     <div class="gravatar_edit">
-      <%= gravatar_for @user %>
-      <a href="http://gravatar.com/emails">change</a>
+      <%= form_for @user, url: users_path, html: { multipart: true } do |f| %>
+        <%= f.file_field :avatar %>
+      <% end %>
     </div>
   </div>
 </div>
