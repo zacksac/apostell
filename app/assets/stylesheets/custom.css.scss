@@ -145,7 +145,7 @@ aside {
   }
 }
 
-.gravatar {
+.user_photo {
   float: left;
   margin-right: 10px;
 }
@@ -180,13 +180,6 @@ aside {
 .user_photo {
   overflow: auto;
   margin-top: 10px;
-  .gravatar {
-    margin: 1px 1px;
-  }
-  a {
-    padding: 0;
-  }
-}
 
 .users.follow {
   padding: 0;
@@ -272,7 +265,7 @@ input {
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
+  .user_photo {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
