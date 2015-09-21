@@ -20,11 +20,10 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
       <%= f.submit "Save changes", class: "btn btn-primary" %>
-    <% end %>
 
-    <div class="profile_photo_edit">
       <%= f.file_field :photo %>
       <%= f.submit "Change" %>
+    <% end %>
     </div>
   </div>
 </div>
