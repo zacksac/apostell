@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
   has_secure_password 
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true 
-  
+
   # Returns the hash digest of the given string.
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -110,4 +110,5 @@ class User < ActiveRecord::Base
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(activation_token)
     end 
+
 end
