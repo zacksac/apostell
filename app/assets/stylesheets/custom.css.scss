@@ -145,12 +145,12 @@ aside {
   }
 }
 
-.user_photo {
+.gravatar {
   float: left;
   margin-right: 10px;
 }
 
-.profile_photo_edit {
+.gravatar_edit {
   margin-top: 15px;
 }
 
@@ -177,9 +177,16 @@ aside {
   }
 }
 
-.user_photo {
+.user_avatars {
   overflow: auto;
   margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
 
 .users.follow {
   padding: 0;
@@ -265,7 +272,7 @@ input {
     display: block;
     margin-left: 60px;
   }
-  .user_photo {
+  .gravatar {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
