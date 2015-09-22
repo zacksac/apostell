@@ -19,9 +19,10 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+      <%= f.file_field :photo %>
+      
       <%= f.submit "Save changes", class: "btn btn-primary" %>
       
-      <%= f.file_field :photo %>
     <% end %>
 
     <div class="gravatar_edit"> 
