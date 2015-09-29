@@ -8032,15 +8032,7 @@ button.close {
 /* mixins, variables, etc. */
 /* miscellaneous */
 /* line 16, /Users/gaspardyawili/Desktop/workspace/apostell/app/assets/stylesheets/custom.css.scss */
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 
 /* universal */
 /* line 26, /Users/gaspardyawili/Desktop/workspace/apostell/app/assets/stylesheets/custom.css.scss */
