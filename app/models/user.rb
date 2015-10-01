@@ -19,7 +19,8 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
   has_secure_password 
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
-  has_attached_file :photo
+  has_attached_file :photo, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "avatar/:style_missing.png"
+  validates_attachment_content_type :photo, content_type: /\Aimage\/.*\Z/
 
   mount_uploader :picture, PictureUploader
 

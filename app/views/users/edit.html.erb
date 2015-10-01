@@ -19,6 +19,9 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+      <% if f.object.photo? %>
+        <%= image_tag f.object.photo.url(:medium) %>
+      <% end %>
       <%= f.file_field :photo %>
       
       <%= f.submit "Save changes", class: "btn btn-primary" %>
